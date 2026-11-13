@@ -1,0 +1,5 @@
+fastapi>=0.115
+pydantic>=2  # v1 would coerce 123 -> "123" and break the wrong-type -> 422 rule
+uvicorn>=0.30
+httpx2>=2.0  # TestClient transport; plain httpx triggers a Starlette deprecation warning
+pytest>=8.0
